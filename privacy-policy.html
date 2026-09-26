@@ -22,7 +22,7 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: September 17, 2026</p>
+    <p class="updated">Last updated: September 26, 2026</p>
 
     <p>Sets & Reps ("the App") is operated by KAS Holding LLC ("we", "us", "our"). This Privacy Policy explains how we collect, use, and protect your information when you use the App.</p>
 
@@ -36,21 +36,27 @@
     <ul>
         <li>Name, date of birth, height, and sex (for fitness calculations)</li>
         <li>Fitness goals</li>
-        <li>Workout routines and exercise history</li>
-        <li>Nutrition and food logging data</li>
+        <li>Injuries and health notes, such as recovering from a surgery or lower back issues, which you may choose to add so the AI coach can plan around them</li>
+        <li>Workout routines and exercise history, including your notes</li>
+        <li>Nutrition and food logging data, including custom foods</li>
         <li>Daily body weight and step counts</li>
     </ul>
 
-    <h3>AI Conversations</h3>
-    <p>The AI fitness coach and AI calorie estimation features require you to supply your own API key for an AI provider of your choice: Google Gemini, OpenAI, or Anthropic (Claude). When you use those features, your conversation messages are sent from your device directly to the provider you selected, using your key. They do not pass through our servers, and we do not store your AI conversations anywhere. Your API key is held in your device's secure keystore and is never transmitted to us. Please refer to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>, <a href="https://openai.com/privacy">OpenAI's Privacy Policy</a>, and <a href="https://www.anthropic.com/legal/privacy">Anthropic's Privacy Policy</a> for how they handle data.</p>
+    <h3>AI Features</h3>
+    <p>The AI fitness coach and AI calorie estimation features require you to supply your own API key for an AI provider of your choice: Google Gemini, OpenAI, or Anthropic (Claude). When you use those features, the App sends your requests from your device directly to the provider you selected, using your key. They do not pass through our servers.</p>
+    <p>So that the coach can personalize its advice, each message to the AI coach also includes information from your profile and logs, such as your name, age, height, sex, fitness goals, any injuries and health notes you added, body weight, workouts and routines, exercise notes, and food and step logs, along with short summaries of your earlier coach conversations. If you turn on coach notifications, a daily message is written from a smaller summary (your name, goals, recent workouts, body weight trend, and food logging streak), which never includes your injuries and health notes. AI calorie estimation sends only the meals you describe.</p>
+    <p>We do not store your AI conversations anywhere; they stay on your device. Your API key is held in your device's secure keystore and is never transmitted to us. Please refer to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>, <a href="https://openai.com/privacy">OpenAI's Privacy Policy</a>, and <a href="https://www.anthropic.com/legal/privacy">Anthropic's Privacy Policy</a> for how they handle data.</p>
 
     <h2>2. How Your Data Is Stored</h2>
 
-    <h3>Local Storage</h3>
-    <p>The majority of your data (workouts, nutrition logs, body stats, routines, and preferences) is stored locally on your device using Hive, a local database. This data does not leave your device unless you choose to export it.</p>
+    <h3>On Your Device</h3>
+    <p>Your data is stored on your device in a local database (Hive), so the App works without a connection.</p>
 
-    <h3>Cloud Storage</h3>
-    <p>Certain data is stored in Google Cloud Firestore linked to your account, including your terms acceptance status. This data is secured with Firebase security rules so that only you can access your own data.</p>
+    <h3>In the Cloud</h3>
+    <p>While you are signed in, your data is also stored in Google Cloud Firestore, linked to your account, so it stays in step across your devices and comes back when you sign in on a new one. This includes your profile (with any injuries and health notes you add), workouts, routines, nutrition and food logs, body weight, step counts, custom foods and exercises, exercise notes, nutrition goals, and your terms acceptance status. It is secured with Firebase security rules so that only you can access your own data. Backups of the cloud database are kept for up to 7 days.</p>
+
+    <h3>Only on Your Device</h3>
+    <p>Your AI API key, your AI coach conversations, your App preferences, and a workout in progress are never uploaded.</p>
 
     <h2>3. Third-Party Services</h2>
     <p>The App uses the following third-party services, each with their own privacy policies:</p>
@@ -68,19 +74,21 @@
     <p>We use your information to:</p>
     <ul>
         <li>Provide and maintain the App's functionality</li>
+        <li>Keep your data in step across your devices, and restore it when you sign in on a new one</li>
         <li>Authenticate your account</li>
         <li>Display advertisements</li>
     </ul>
 
     <h2>6. Data Sharing</h2>
-    <p>We do not sell, trade, or rent your personal information to third parties. Your data is only shared with the third-party services listed above as necessary to provide the App's functionality.</p>
+    <p>We do not sell, trade, or rent your personal information to third parties. Your data is only shared with the third-party services listed above as necessary to provide the App's functionality. Information reaches an AI provider only when you use the AI features, sent directly from your device with your own API key.</p>
 
     <h2>7. Data Security</h2>
     <p>We take reasonable measures to protect your data, including:</p>
     <ul>
         <li>Firebase Authentication for secure account access</li>
         <li>Firestore security rules restricting data access to the owning user</li>
-        <li>Local-first data storage that keeps most data on your device</li>
+        <li>Encrypted connections (HTTPS) for the data the App sends</li>
+        <li>Your AI API key kept in your device's secure keystore</li>
     </ul>
     <p>However, no method of electronic storage or transmission is 100% secure, and we cannot guarantee absolute security.</p>
 
@@ -88,7 +96,7 @@
     <p>The App is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us so we can delete it.</p>
 
     <h2>9. Data Deletion</h2>
-    <p>You can delete your local data at any time by clearing the App's data or uninstalling it. To request deletion of your cloud-stored data and account, contact us at <a href="mailto:kas.holding.llc@gmail.com">kas.holding.llc@gmail.com</a>.</p>
+    <p>You can delete your account and all of your cloud data at any time from within the App: open the Settings tab and choose Delete Account. This deletes your account and removes your data from our cloud database; backup copies are deleted automatically within 7 days. Signing out keeps your data on the device; uninstalling the App or clearing its data removes it. You can also request deletion by contacting us at <a href="mailto:kas.holding.llc@gmail.com">kas.holding.llc@gmail.com</a>.</p>
 
     <h2>10. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. Changes will be posted within the App and on this page with an updated "Last updated" date.</p>
